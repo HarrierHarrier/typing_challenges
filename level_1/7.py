@@ -1,7 +1,12 @@
+# Вопрос: Если в send_email вместо pass написать return None, то mypy жалуется
+#   следующим образом:
+#  error: "send_email" does not return a value  [func-returns-value]
+# Почему так и как ему сказать, что так и должно быть?
+
 from constants import ___
 
 
-def send_email(header: ___, text_content: ___, send_to: ___) -> ___:
+def send_email(header: str, text_content: str, send_to: str) -> None:
     pass
 
 
