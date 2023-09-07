@@ -1,9 +1,10 @@
+from typing import Mapping
 import decimal
 
 from constants import ___
 
 
-def get_transaction_amount(transaction_id: ___, transactions_amounts_map: ___) -> ___:
+def get_transaction_amount(transaction_id: int, transactions_amounts_map: Mapping[int, decimal.Decimal]) -> decimal.Decimal | None:
     # попробуйте использовать typing.Mapping: transactions_amounts_map по смыслу не должен меняться внутри функции
     pass
 
